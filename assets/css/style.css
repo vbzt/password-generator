@@ -1,0 +1,180 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* imports */
+
+/* scroll */
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorido);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--corFundo);
+}
+/* scroll */
+
+/* pre definicao padrao */
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Poppins";
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+/* pre definicao padrao */
+
+/* root */
+:root {
+  --corTexto: #111;
+  --corFundo: #272e53;
+  --colorido: #eee;
+}
+/* root */
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: var(--corFundo);
+  color: var(--corTexto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 25%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 1cqw 2cqw;
+  justify-content: space-around;
+  border-radius: 8px;
+  background-color: var(--colorido);
+}
+
+.title p {
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+.password-output {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5cqh;
+}
+
+.output {
+  display: flex;
+  padding: 3%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: 3px solid #545454;
+  font-weight: 600;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.strength-bar {
+  width: 100%;
+  background-color: #545454;
+  border-radius: 7px;
+  height: 0.6vh;
+}
+
+.fill {
+  border-radius: 7px;
+  width: 20%;
+  height: 100%;
+  background-color: red;
+}
+
+.title-lenght {
+  display: flex;
+  justify-content: space-between;
+}
+
+.length,
+.settings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5cqw;
+}
+
+.length input {
+  width: 100%;
+}
+
+.settings {
+  height: 25%;
+}
+
+.inputs {
+  display: grid;
+  gap: 2cqw;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.inputs label {
+  font-weight: 600;
+}
+
+.generate {
+  width: 100%;
+}
+
+.generate button {
+  width: 100%;
+  color: var(--colorido);
+  font-weight: 500;
+  background-color: var(--corFundo);
+  padding: 0.5cqw;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container{
+    width: 75%;
+    height: 40%;
+  }
+
+  .title p{
+    font-size: 1.2vh;
+  }
+
+  .output{
+    font-size: 1.1vh;
+  }
+
+  .strength-bar{
+    height: 0.4vh;
+  }
+
+  .inputs label{
+    font-size: 1.2vh;
+  }
+
+  .inputs input{
+    height: 20px;
+    width: 20px;
+  }
+
+  .generate button{
+    font-size: 1.1vh;
+    padding: 0.5cqh;
+  }
+}

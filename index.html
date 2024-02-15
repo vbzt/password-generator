@@ -1,0 +1,66 @@
+<html lang="pr-br">
+    <head>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <title>Password Generator</title>
+        <link rel="shortcut icon" href="./assets/img/" type="image/x-icon">
+    </head>
+  <body>
+    <main>
+        <div class="container">
+            <div class="title">
+                <p>Password Generator</p>
+            </div>
+            <div class="password-output">
+                <div class="output">
+                    <p id="password">Generated Password</p>
+                    <i class="fa-regular fa-clipboard"></i>
+                </div>
+                <div class="strength-bar">
+                    <div class="fill"></div>
+                </div>
+            </div>
+            
+            <div class="length">
+                <div class="title title-lenght">
+                    <p>Password length</p>
+                    <p id = 'password-length'>8</p>
+
+                </div>
+                <input type="range" min = "8" max = "16" step = "0" name="" id="length">
+            </div>
+
+            <div class="settings">
+                <div class="title">
+                    <p>Password settings</p>
+                </div>
+
+                <div class="inputs">
+                    <div class="lowercase">
+                        <input type="checkbox" name="lowercase" id="lowercase">
+                        <label for="lowercase">Lowercase (a-z)</label>
+                    </div>
+                    <div class="uppercase">
+                        <input type="checkbox" name="Uppercase" id="uppercase">
+                        <label for="Uppercase">Uppercase (A-Z)</label>
+                    </div>
+                    <div class="number">
+                        <input type="checkbox" name="numbers" id="number">
+                        <label for="numbers">Numbers (0-9)</label>
+                    </div>
+                    <div class="symbol">
+                        <input type="checkbox" name="symbol" id="symbol">
+                        <label for="symbol">Symbols (!-$^+)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="generate">
+                <button onclick="generatePassword()">Generate Password</button>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/script/script.js"></script>
+  </body>
+</html>
