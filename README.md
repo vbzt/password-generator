@@ -9,6 +9,7 @@ https://vbzt-passwordgenerator.vercel.app
 
 # 📷 
 
-![image](https://github.com/vbzt/fetchApi-finder/assets/124489579/7747cbf7-c305-4e35-900d-0e8c649e3024)
+![image](https://github.com/vbzt/password-generator/assets/124489579/7e063386-264f-46b6-a2c5-9c0e4dabcd9e)
+
 
 

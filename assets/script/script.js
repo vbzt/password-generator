@@ -38,7 +38,6 @@ class GeneratePassword { // Password generator
   }
 
   passwordStrenght(lowercaseCheck, uppercaseCheck, numberCheck, symbolCheck, length) { // Calculates the password strength based of the options selected
-    console.log(length)
     let lengthScore = 0
     if(length <= 12) lengthScore = 25
     if(length <= 15) lengthScore = 40
@@ -82,6 +81,7 @@ function generatePassword() { // Generates the password when activated (button p
   const lenght = document.querySelector('#length').value
   const newPassword = new GeneratePassword(lenght)
   output.innerHTML = newPassword.selectedCharacters()
+  
 }
 
 // Updates the range value every time its moved
@@ -92,4 +92,10 @@ input.addEventListener("input", (e) => {
   output.innerHTML = e.target.value
 })
 
+// Copies the password to clipboard
+const password = document.querySelector('#password');
+const clipboard = document.querySelector('i');
+clipboard.addEventListener('click', e => {
+    navigator.clipboard.writeText(password.innerHTML);
+});
 
